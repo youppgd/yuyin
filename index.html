@@ -29,13 +29,13 @@ $(function(){
 	var num=GetQueryString("num");	
 		if(num !=null){
 		if(num<2){
-			$('.vip').css('display','none');
+			$('.vip').html("");
 		}else if( num>10){
-			$('.free').css('display','none');
+			$('.free').html("");
 		}
 	var vip=GetQueryString("vip");
 	if(vip !=null && vip%2==0){
-			$('.vip').css('display','none');
+			$('.vip').html("");
 			$('.ycy').css('display','block');
 
 	}
