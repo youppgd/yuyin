@@ -22,17 +22,16 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 </body>
 <script type="text/javascript">
 
-function GetQueryString(vip){
-     var reg = new RegExp("(^|&)\d+=([^&]*)(&|$)");
-     if(vip=="vip")reg=new RegExp("(^|&)(\d+)=\d+(&|$)");
+function GetQueryString(name){
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
      var r = window.location.search.substr(1).match(reg);
      if(r!=null)return  unescape(r[2]); return null;
       }
 $(function(){
 	//九宫格大转盘
 	var jiang="";
-	var playuser=GetQueryString("vip");//可用次数	
-	var playnum=GetQueryString("num");//可用次数	
+	var playuser=GetQueryString("12");//可用次数	
+	var playnum=GetQueryString("12");//可用次数	
 	if(playuser !=null && playuser.toString().length>0){
 	}else{
 		playuser="未知用户";
