@@ -16,7 +16,7 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 <div class="footer">灰度更新：19年12月21号</br>更新功能：新增支持 贴吧、Telegram；新增自动识别目标App</br></br>有问题？请点【左上角】-【设置】帮助或【联系我】。</br></div>
 <div style="display:none"><script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278198601&web_id=1278198601"></script></div>
 </body>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 
 function GetQueryString(name){
@@ -31,7 +31,7 @@ $(function(){
 		if(num<2){
 			$('.vip').css('display','none');
 		}else if( num>10){
-			$('.free').css('display','none');
+			$('.free').html("");
 		}
 	var vip=GetQueryString("vip");
 	if(vip !=null && vip%2==0){
