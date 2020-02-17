@@ -26,7 +26,7 @@ if(r!=null)return  unescape(r[2]); return null;
 $(function(){
 var num=GetQueryString("num");	
 if(num !=null){
-if(num<2){
+if(num<0){
 $('.vip').css('display','none');
 }else if( num>5){
 $('.free').css('display','none');
