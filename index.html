@@ -16,5 +16,25 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 <div style="display:none"><script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278198601&web_id=1278198601"></script></div>
 </body>
 <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-
+<script type="text/javascript">
+function GetQueryString(name){
+var reg = new RegExp("(^|&)\\w+=(\\d+)(&|$)");
+var r = window.location.search.substr(1).match(reg);
+if(r!=null)return  unescape(r[2]); return null;
+}
+$(function(){
+var num=GetQueryString("n");	
+if(num !=null){
+if(num<0){
+$('.vip').css('display','none');
+}else if( num>5){
+$('.free').css('display','none');
+$('.ycy').css('display','block');
+}
+var vip=GetQueryString("v");
+if(vip !=null){
+$('.vip').css('display','none');
+$('.ycy').css('display','block');
+}}});
+</script>
 </html>
