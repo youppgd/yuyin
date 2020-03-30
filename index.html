@@ -23,16 +23,16 @@ if(r!=null)return  unescape(r[2]); return null;
 }
 $(function(){
 $('.footer').css('display','block');
-$('.ycy').css('display','block');
 
 var num=GetQueryString("n");	
 if(num !=null){
 if(num<7){
 $('.free').css('display','block');
-}
+}else{$('.ycy').css('display','block');}
 var vip=GetQueryString("v");
 if(vip ==null){
 $('.vip').css('display','block');
-}}});
+}else{$('.ycy').css('display','block');}
+}});
 </script>
 </html>
