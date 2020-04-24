@@ -10,7 +10,7 @@ body{min-height:100%;margin:0;padding:0;position:relative;}
 <div class="c" style="display:block"><center><div class="free" style="display:none"></br></br></br>非VIP可以使用【默认】与【其它】两个语音包约800条语音</br></div>
 <div class="ycy" style="display:none"></br></br>
 安装【转码器】，使用【我的】下语音时将自动转码。</br></br>一个VIP，只可用于一个语音秀app！！</div> 
-<div class="p" style="display:block">❤</div> 
+<div class="p" style="display:block"></br></br>❤</div> 
 <div class="vip" style="display:none"></br></br>【联系我】6元至年底、15元永久，解锁VIP：</br>1万+语音、导入【我的】语音、支持微信、QQ镇楼音、语音秀xp。</div></center></div>
 <div class="footer" style="display:none">更新：20年4月24号</br>新增蓝奏云下载器【网盘】</br>新增支持：星梦漂流瓶</br></br>左上角 菜单：设置 | 帮助 | 联系我</br></div>
 <div style="display:none"><script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278198601&web_id=1278198601"></script></div>
@@ -29,12 +29,12 @@ if(num !=null){
 if(num<7){
 $('.free').css('display','block');
 }
-var upTip=" ";
+var upTip="</br></br>";
 var p=GetQueryString("p");	
 if(p==null||p<52)upTip+="语音秀 ";
 var xp=GetQueryString("xp");
 if(xp!=null&&xp>20000000&&xp<20042400)upTip+="语音秀xp ";
-if(upTip.length>1)$('.p')[0].innerHTML=upTip+"有新版可以升级了！";
+if(upTip.length>10)$('.p')[0].innerHTML=upTip+"有新版可以升级了！";
 var vip=GetQueryString("v");
 if(vip ==null){
 if(num!=null&&num>1){$('.vip').css('display','block');}
