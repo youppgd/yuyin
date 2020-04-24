@@ -29,12 +29,12 @@ if(num !=null){
 if(num<7){
 $('.free').css('display','block');
 }
-var upTip="";
+var upTip=" ";
 var p=GetQueryString("p");	
-if(p==null||p<52)upTip+="语音秀 ";
-var xp=GetQueryString("xp");	
-if(xp!=null&&xp>20000000&&xp<20042400)upTip+="语音秀xp ";
-if(upTip.length>0)$('.p').innerHTML=upTip+"有新版可以升级了！";
+if(p==null||p<52){upTip+="语音秀 ";}
+var xp=GetQueryString("xp");
+if(xp!=null&&xp>20000000&&xp<20042400){upTip+="语音秀xp ";}
+if(upTip.length>1){$('.p').innerHTML=upTip+"有新版可以升级了！";}
 var vip=GetQueryString("v");
 if(vip ==null){
 if(num!=null&&num>1){$('.vip').css('display','block');}
